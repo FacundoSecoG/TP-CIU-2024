@@ -25,3 +25,8 @@ Proyecto realizado para la materia de "Creacion de interfaces de usuario" dado p
 ## Uso :wink:
 
 Para usar el sitio web, navega a `http://localhost:5173` en tu navegador.
+
+## Integrantes 👨‍💻
+- Facundo Nicolas, Seco Gaitan
+- Valentin Adriel, Varela
+- Thiago, Garcia
