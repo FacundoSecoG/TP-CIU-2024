@@ -18,14 +18,13 @@ const AppProvider = ({ children }) => {
                 setLoading(false);
             }
         };
-
         conseguirProductos();
     }, []);
 
     return (
         <AppContext.Provider value={{ 
                 cafes, 
-                loading 
+                loading
             }}>
             {children}
         </AppContext.Provider>

@@ -1,4 +1,4 @@
-# Trabajo practico (ReactJS Vite - Creacion de interfases de usuario)
+# Trabajo practico (ReactJS Vite - Creacion de interfaces de usuario)
 
 <!-- ![Imagen de Portafolio](https://firebasestorage.googleapis.com/v0/b/portafolio-web-49f55.appspot.com/o/miniaturasProyectos%2FproyectoReactjs.png?alt=media&token=0608af7a-5ead-4c33-bfc2-e5dc6e3edaaa) -->
 
@@ -27,6 +27,6 @@ Proyecto realizado para la materia de "Creacion de interfaces de usuario" dado p
 Para usar el sitio web, navega a `http://localhost:5173` en tu navegador.
 
 ## Integrantes 👨‍💻
-- Facundo Nicolas, Seco Gaitan
-- Valentin Adriel, Varela
-- Thiago, Garcia
+- Facundo Nicolas, Seco Gaitan.
+- Valentin Adriel, Varela.
+- Thiago, Garcia.

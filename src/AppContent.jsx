@@ -3,16 +3,20 @@ import { useContext } from "react";
 import { AppContext } from "./Context/AppContext";
 
 import Home from "./Components/Home/Home";
+import Loading from "./Components/Loading/Loading";
 
 const AppContent = () => {
-    const { cafes } = useContext(AppContext);
-    console.table(cafes);
+    const { loading } = useContext(AppContext);
     return (
         <BrowserRouter>
-            <Routes>
-                <Route path="" element={<Home />} />
-                <Route path="/inicio" element={<Home />} />
-            </Routes>
+            {loading ? <Loading /> : (
+                <>
+                    <Routes>
+                        <Route path="" element={<Home />} />
+                        <Route path="/inicio" element={<Home />} />
+                    </Routes>
+                </>
+            )}
         </BrowserRouter>
     )
 }
