@@ -2,10 +2,10 @@ import React from 'react'
 
 const CardCafe = ({ cafe }) => {
     return (
-        <>
-            <h1 className=''>{cafe.title}</h1>
-            <img src={cafe.image} alt={`foto de ${cafe.title}`} className='' />
-        </>
+        <div className=''>
+            <h1 className=''>{cafe.nombre}</h1>
+            <p>{cafe.precio}</p>
+        </div>
     )
 }
 
