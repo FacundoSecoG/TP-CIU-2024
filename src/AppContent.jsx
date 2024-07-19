@@ -7,6 +7,11 @@ import Loading from "./Components/Loading/Loading";
 import HeaderContainer from "./Components/Header/HeaderContainer";
 import FooterContainer from "./Components/Footer/FooterContainer";
 
+import Menu from "./Components/Menu/MenuContainer";
+import ContactContainer from "./Components/Contact/ContactContainer";
+import AboutContainer from "./Components/AboutUs/AboutContainer";
+import GalerryContainer from "./Components/Gallery/GalleryContainer";
+
 const AppContent = () => {
     const { loading } = useContext(AppContext);
     return (
@@ -17,6 +22,11 @@ const AppContent = () => {
                     <Routes>
                         <Route path="" element={<Home />} />
                         <Route path="/inicio" element={<Home />} />
+
+                        <Route path="/menu" element={<Menu />}/> 
+                        <Route path="/contacto" element={<ContactContainer />}/>
+                        <Route path="/sobrenosotros" element={<AboutContainer />}/>
+                        <Route path="/galeria" element={<GalerryContainer />}/>
                     </Routes>
                     <FooterContainer />
                 </>

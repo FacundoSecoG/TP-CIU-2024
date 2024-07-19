@@ -7,20 +7,23 @@ const FooterContent = () => {
         <>
             <div className="sm:flex sm:items-center sm:justify-between">
                 <Link to={"/"} className="flex items-center justify-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                    <img src="/logo.png" alt="Tuki Logo" className='sm:w-[200px] w-[120px]' />
+                    <img src="/logo.png" alt="Tuki Logo" className='sm:w-[100px] w-[80px]' />
                 </Link>
                 <ul className="flex flex-wrap justify-center items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                     <li>
                         <Link to={"/"} className={`hover:underline hover:text-teal-800 me-4 md:me-6 ${location.pathname === "/" ? "font-bold text-teal-800" : "text-white"}`}>Inicio</Link>
                     </li>
                     <li>
-                        <Link to={"/productos"} className={`hover:underline hover:text-teal-800 me-4 md:me-6 ${location.pathname === "/categoria/productos" ? "font-bold text-teal-800" : "text-white"}`}>Productos</Link>
+                        <Link to={"/Menú"} className={`hover:underline hover:text-teal-800 me-4 md:me-6 ${location.pathname === "/menu" ? "font-bold text-teal-800" : "text-white"}`}>Menú</Link>
                     </li>
                     <li>
-                        <Link to={"/contacto"} className={`hover:underline hover:text-teal-800 me-4 md:me-6 ${location.pathname === "/categoria/contacto" ? "font-bold text-teal-800" : "text-white"}`}>Contacto</Link>
+                        <Link to={"/contacto"} className={`hover:underline hover:text-teal-800 me-4 md:me-6 ${location.pathname === "/contacto" ? "font-bold text-teal-800" : "text-white"}`}>Contacto</Link>
                     </li>
                     <li>
-                        <Link to={"/sobrenosotros"} className={`hover:underline hover:text-teal-800 ${location.pathname === "/categoria/sobrenosotros" ? "font-bold text-teal-800" : "text-white"}`}>Sobre nosotros</Link>
+                        <Link to={"/sobrenosotros"} className={`hover:underline hover:text-teal-800 me-4 md:me-6 ${location.pathname === "/sobrenosotros" ? "font-bold text-teal-800" : "text-white"}`}>Sobre nosotros</Link>
+                    </li>
+                    <li>
+                        <Link to={"/galeria"} className={`hover:underline hover:text-teal-800 ${location.pathname === "/galeria" ? "font-bold text-teal-800" : "text-white"}`}>Galeria</Link>
                     </li>
                 </ul>
             </div>
