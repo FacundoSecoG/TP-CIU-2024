@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import CardCafe from '../Product/CardCafe'
+import CardCafe from '../MenuItem/CardCafe'
 import { AppContext } from '../../Context/AppContext'
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
         <div className=''>
             <ul className=''>
                 {cafes.map(cafe => 
-                    <div key={cafe.id} className='max-w-[70vw] m-auto h-auto w-[100px] '>
+                    <div key={cafe.id} className='max-w-[70vw] m-auto h-auto w-[400px] '>
                         <CardCafe cafe={cafe} />
                     </div>
                 )}
