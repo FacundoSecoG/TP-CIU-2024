@@ -10,7 +10,7 @@ import FooterContainer from "./Components/Footer/FooterContainer";
 import Menu from "./Components/Menu/MenuContainer";
 import ContactContainer from "./Components/Contact/ContactContainer";
 import AboutContainer from "./Components/AboutUs/AboutContainer";
-import GalerryContainer from "./Components/Gallery/GalleryContainer";
+import GalleryContainer from "./Components/Gallery/GalleryContainer";
 
 const AppContent = () => {
     const { loading } = useContext(AppContext);
@@ -26,7 +26,7 @@ const AppContent = () => {
                         <Route path="/menu" element={<Menu />}/> 
                         <Route path="/contacto" element={<ContactContainer />}/>
                         <Route path="/sobrenosotros" element={<AboutContainer />}/>
-                        <Route path="/galeria" element={<GalerryContainer />}/>
+                        <Route path="/galeria" element={<GalleryContainer />}/>
                     </Routes>
                     <FooterContainer />
                 </>

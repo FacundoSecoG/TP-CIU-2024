@@ -1,8 +1,11 @@
 import React from 'react'
+import MenuContent from './MenuContent'
 
 const MenuContainer = () => {
   return (
-    <div>MenuContainer</div>
+    <div>
+      
+    </div>
   )
 }
 
