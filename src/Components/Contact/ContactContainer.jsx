@@ -1,8 +1,9 @@
 import React from 'react'
+import ContactContent from './ContactContent'
 
 const ContactContainer = () => {
   return (
-    <div>ContactContainer</div>
+    < ContactContent />
   )
 }
 

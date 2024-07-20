@@ -12,9 +12,9 @@ import React from 'react'
 
 const CardCafe = ({ cafe }) => {
     return (
-        <div className="my-5 w-full max-w-sm rounded-lg bg-slate-600 shadow-xl">
+        <div className="my-5 w-full max-w-sm min-h-[200px] rounded-lg bg-slate-600 shadow-xl">
             <div className="p-5">
-                <a href="#">
+                <a href="#"> {/*AL PEDO QUE SEA ETIQUETA A? */}
                     <h5 className="text-3xl font-semibold tracking-tight text-white">{cafe.nombre}</h5>
                 </a>
                 <h6 className="mb-3 font-normal text-gray-400">{cafe.descripcion}</h6>
