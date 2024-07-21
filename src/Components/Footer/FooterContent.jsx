@@ -14,7 +14,7 @@ const FooterContent = () => {
                         <Link to={"/"} className={`hover:underline hover:text-teal-800 me-4 md:me-6 ${location.pathname === "/" ? "font-bold text-teal-800" : "text-white"}`}>Inicio</Link>
                     </li>
                     <li>
-                        <Link to={"/Menú"} className={`hover:underline hover:text-teal-800 me-4 md:me-6 ${location.pathname === "/menu" ? "font-bold text-teal-800" : "text-white"}`}>Menú</Link>
+                        <Link to={"/menu"} className={`hover:underline hover:text-teal-800 me-4 md:me-6 ${location.pathname === "/menu" ? "font-bold text-teal-800" : "text-white"}`}>Menú</Link>
                     </li>
                     <li>
                         <Link to={"/contacto"} className={`hover:underline hover:text-teal-800 me-4 md:me-6 ${location.pathname === "/contacto" ? "font-bold text-teal-800" : "text-white"}`}>Contacto</Link>

@@ -3,7 +3,9 @@ import ContactContent from './ContactContent'
 
 const ContactContainer = () => {
   return (
-    < ContactContent />
+    <div className='w-[80vw] m-auto bg-slate-400'>
+      <ContactContent />
+    </div>
   )
 }
 

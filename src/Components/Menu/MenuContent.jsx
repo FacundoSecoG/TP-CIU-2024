@@ -2,25 +2,24 @@ import React, { useContext } from 'react'
 import CardCafe from '../MenuItem/CardCafe'
 import { AppContext } from '../../Context/AppContext'
 
-let crearFuncionOVariableAca = 0
-
 const MenuContent = () => {
-  const { cafes } = useContext(AppContext)
+    const { cafes } = useContext(AppContext)
+
     return (
-        <div className='py-20 grid grid-cols-3 gap-1'>
-            <ul className='grid grid-cols-subgrid gap-1 col-span-2'>
+        <div className='py-20'>
+            <ul className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 {cafes.map(cafe => 
-                    <div key={cafe.id} className='max-w-[70vw] m-auto h-auto w-[400px] '>
+                    <div key={cafe.id} className='min-w-[300px] max-w-[500px] mx-auto'>
                         <CardCafe cafe={cafe} />
                     </div>
                 )}
             </ul>
-            <div className='p-5 sticky top-[25%] mt-5 mr-20 col-start-3 max-w-[40vw] h-[500px] rounded-lg bg-slate-600 shadow-xl'>
-                <h2 className='text-4xl font-semibold tracking-tight text-white'>CARRITO</h2>
+            <div className='py-5 px-16 rounded-lg bg-slate-600 shadow-xl'>
+                <h2 className='2xl:text-3xl lg:text-xl text-lg font-semibold tracking-tight text-white'>CARRITO</h2>
                 <ul className='mt-3'>
-                    <li>xd</li> {/* CREAR EVENTO PARA AGREGAR AL CARRITO ACÁ*/}
+                    
                 </ul>
-                <h3 className='absolute bottom-5 left-5 text-2xl font-semibold tracking-tight text-white'>TOTAL: ${crearFuncionOVariableAca}</h3>
+                <h3 className='2xl:text-2xl lg:text-lg text-base font-semibold tracking-tight text-white'>TOTAL: ${}</h3>
             </div>
         </div>
     )

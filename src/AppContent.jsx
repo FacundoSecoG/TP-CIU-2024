@@ -19,15 +19,17 @@ const AppContent = () => {
             {loading ? <Loading /> : (
                 <>
                     <HeaderContainer />
-                    <Routes>
-                        <Route path="" element={<Home />} />
-                        <Route path="/inicio" element={<Home />} />
+                    <div className="py-32 px-10">
+                        <Routes>
+                            <Route path="" element={<Home />} />
+                            <Route path="/inicio" element={<Home />} />
 
-                        <Route path="/menu" element={<Menu />}/> 
-                        <Route path="/contacto" element={<ContactContainer />}/>
-                        <Route path="/sobrenosotros" element={<AboutContainer />}/>
-                        <Route path="/galeria" element={<GalleryContainer />}/>
-                    </Routes>
+                            <Route path="/menu" element={<Menu />}/> 
+                            <Route path="/contacto" element={<ContactContainer />}/>
+                            <Route path="/sobrenosotros" element={<AboutContainer />}/>
+                            <Route path="/galeria" element={<GalleryContainer />}/>
+                        </Routes>
+                    </div>
                     <FooterContainer />
                 </>
             )}
