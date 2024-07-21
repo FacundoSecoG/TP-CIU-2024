@@ -10,8 +10,8 @@ const Home = () => {
                     <p>El ambiente cálido y los detalles de nuestros productos elaborados artesanalmente hacen que la experiencia sea única e inigualable.</p>
                 </blockquote>
             </div>
-
-            <div className='my-16 w-[50vw] m-auto bg-slate-400 bg-slate-600 rounded-xl text-white p-6'>
+            
+            <div className='my-16 w-[50vw] m-auto bg-slate-600 rounded-xl text-white p-6'>
                 <iframe className='w-full aspect-[16/9]' src={`https://www.youtube.com/embed/FIHoLqg5lqM?playsinline=1&iv_load_policy=3&rel=0&showinfo=0&controls=0&fs=0&start=0&autoplay=1&enablejsapi=0&widgetid=1`}
                     title="Coffee Bean" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>

@@ -10,7 +10,7 @@ const ContactContent = () => {
       </div>
       <div className='mt-4'>
         <h2 className='lg:text-2xl text-lg font-semibold mb-2'>Siguenos en redes:</h2>
-        <p className='text-base lg:pl-5 pl-2'><a href="https://www.instagram.com/nosara.indie/" target='_blanket'># Instagram</a></p>
+        <p className='text-base lg:pl-5 pl-2 underline text-blue-500'><a href="https://www.instagram.com/nosara.indie/" target='_blanket'># Instagram</a></p>
       </div>
       <div className='mt-4'>
         <h2 className='lg:text-2xl text-lg font-semibold mb-2'>Nuestros horarios:</h2>

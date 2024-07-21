@@ -9,6 +9,8 @@ const AppProvider = ({ children }) => {
     const [cafes, setCafes] = useState([]);
     const [cafesImg, setCafesImg] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [carrito, setCarrito] = useState([]);
+    const [total, setTotal] = useState(0);
 
     const firebaseConfig = {
     apiKey: "AIzaSyAKMWOj_Iv3skdx7GOyyKerJ83dG17BK_g",
@@ -21,6 +23,28 @@ const AppProvider = ({ children }) => {
 
     const app = initializeApp(firebaseConfig);
     const database = getFirestore(app)
+
+    const agregarAlCarrito = (producto) => {
+        const productoExiste = carrito.find(item => item.id === producto.id);
+        if (productoExiste) {
+            setCarrito(carrito.map(item =>
+                item.id === producto.id ? { ...item, cantidad: item.cantidad + 1 } : item
+            ));
+        } else {
+            setCarrito([...carrito, { ...producto, cantidad: 1 }]);
+        }
+        calcularTotal();
+    };
+
+    const eliminarDelCarrito = (idProducto) => {
+        setCarrito(carrito.filter(item => item.id !== idProducto));
+        calcularTotal();
+    };
+
+    const calcularTotal = () => {
+        const total = carrito.reduce((acc, item) => acc + (item.precio * item.cantidad), 0);
+        setTotal(total);
+    };
 
     useEffect(() => {
         const conseguirProductos = async () => {
@@ -50,7 +74,11 @@ const AppProvider = ({ children }) => {
         <AppContext.Provider value={{ 
                 cafes,
                 cafesImg, 
-                loading
+                loading,
+                carrito,
+                total,
+                agregarAlCarrito,
+                eliminarDelCarrito
             }}>
             {children}
         </AppContext.Provider>
