@@ -3,6 +3,13 @@ import React from 'react'
 const Home = () => {
     return (
         <>
+            <div className='mb-12'>
+                <blockquote className='px-[20%] text-xl italic font-semibold text-center text-gray-900 dark:text-white'>
+                    <h3 className='pb-5 text-5xl not-italic'>¡Bienvenidos al sitio (no) oficial de Nosara!</h3>
+                    <p>En nuestro local de Bella Vista te esperan nuestros baristas capacitados para ofrecerte un café muy especial. El ambiente cálido y los detalles de nuestros productos elaborados artesanalmente hacen que la experiencia sea única e inigualable.</p>
+                </blockquote>
+            </div>
+
             <div id='opcion1?' className='mx-5 grid sm:gap-6 sm:grid-cols-3'>
                 
                 <a href="#" className="flex flex-col mb-10 sm:mb-0 items-center rounded-lg shadow 2xl:flex-row md:max-w-2xl border-teal-700 bg-teal-900 hover:bg-teal-800">
