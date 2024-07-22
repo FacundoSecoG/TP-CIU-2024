@@ -23,7 +23,7 @@ const MenuContent = () => {
                 <ul className='my-3 '>
                     {carrito.map((item) =>
                         <li key={item.nombre} className='flex justify-between items-center text-gray-400'>
-                            * bebida: {item.nombre}. - cantidad {item.cantidad}.
+                            * Bebida: "{item.nombre}." - Cantidad: {item.cantidad}. - Subtotal: ${item.precio*item.cantidad}
                             <button onClick={() => handleDeleteFromCart(item.id)}><FaTrash size={20} /></button>
                         </li>
                     )}
